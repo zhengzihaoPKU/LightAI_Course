@@ -1,0 +1,14 @@
+python ptq.py \
+--dataset cifar100 \
+--device cuda:0 \
+--seed  0 \
+--save_path  log/ptq_resnet18_cifar100.txt \
+--batch_size  512 \
+--img_size 32 \
+--in_channels 3 \
+--num_classes 10 \
+--model resnet18 \
+--lr  0.01 \
+--optimizer Adam \
+--epoch  40 \
+--load 0 

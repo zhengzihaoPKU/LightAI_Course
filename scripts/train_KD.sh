@@ -1,0 +1,24 @@
+python train_KD.py \
+--dataset cifar10 \
+--device cuda:0 \
+--seed  0 \
+--save_path  log/3.txt \
+--batch_size  128 \
+--img_size 32 \
+--in_channels 3 \
+--num_classes 100 \
+--teacher_model resnet50 \
+--teacher_lr  0.01 \
+--teacher_optimizer Adam \
+--teacher_epoch  40 \
+--teacher_checkpoint teacher_model.pt \
+--student_model  simplecnn \
+--student_lr  0.01 \
+--student_optimizer Adam \
+--student_epoch 40 \
+--kd_model simplecnn \
+--kd_lr 0.01 \
+--kd_optimizer Adam \
+--kd_epoch 40 \
+--kd_T 2 \
+--kd_alpha 0.5

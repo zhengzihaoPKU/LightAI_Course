@@ -1,0 +1,18 @@
+python train_prune.py \
+--dataset cifar10 \
+--device cuda:0 \
+--seed  0 \
+--save_path  Prune_log/3.txt \
+--batch_size  128 \
+--img_size 32 \
+--in_channels 3 \
+--num_classes 10 \
+--model resnet18 \
+--lr  0.01 \
+--optimizer Adam \
+--epoch  40 \
+--prune_type structured \
+--prune_rate 0.3 \
+--fine_tune_lr 1e-4 \
+--fine_tune_epoch 30 \
+--load 1

@@ -1,0 +1,13 @@
+python train.py \
+--dataset cifar10 \
+--device cuda:0 \
+--seed  0 \
+--save_path  Prune_log/resnet18_cifar10.txt \
+--batch_size  128 \
+--img_size 32 \
+--in_channels 3 \
+--num_classes 100 \
+--model resnet18 \
+--lr  0.01 \
+--optimizer Adam \
+--epoch  40 \

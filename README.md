@@ -1,3 +1,10 @@
+# LightAI-Course 
+手把手教你如何对AI模型进行轻量化（包括剪枝、量化、蒸馏）
+
+运行方式：
+
+bash script/xxx.sh
+
 # Pruning
 
 剪枝包括：
